@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed Feb 27 19:43:11 2019
+Created on 20-10-2019
 
-@author: juangabriel
+@author: joaJua
 """
 
 # Plantilla de Pre Procesado
@@ -15,7 +15,14 @@ import pandas as pd
 
 # Importar el data set
 dataset = pd.read_csv('Data.csv')
+
+
+#variables independientes
+# quiero todas las filas>> uso :
+# quiero todas salvo la ultima columna>> uso el -1
 X = dataset.iloc[:, :-1].values
+
+#variable dependiente a predecir
 y = dataset.iloc[:, 3].values
 
 
