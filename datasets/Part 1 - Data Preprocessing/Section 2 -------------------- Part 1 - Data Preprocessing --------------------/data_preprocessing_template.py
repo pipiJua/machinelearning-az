@@ -10,8 +10,9 @@ Created on 20-10-2019
 
 # Cómo importar las librerías
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
+import seaborn.apionly as sns
+import matplotlib.pyplot as plt
 
 # Importar el data set
 dataset = pd.read_csv('Data.csv')
